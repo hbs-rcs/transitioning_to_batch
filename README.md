@@ -1,6 +1,8 @@
 # Scaling Up Work with Batch (Non-interactive) Jobs
 
-RCS Presents... seminar on how to transition to batch jobs (from interactive sessions) on HPC systems
+August 2021
+
+**RCS Presents... seminar on how to transition to batch jobs (from interactive sessions) on HPC systems**
 
 Working with code using GUI tools such as NoMachine is usually a default choice for many users. However, as the datasets grow larger, the task grows more complex, or the number of necessary repetitions increases, this approach is no longer scalable. Running batch (or background) jobs, where one does not interact with the program that is running, allows the user to scale one's work. On the HBSGrid cluster, for example, one can run hundreds of scripts at once, analyzing numerous data files simultaneously, or performing other parallelizable or automatable jobs. 
 
@@ -24,19 +26,19 @@ o What do you (or would you) find limiting??
 
 ## Steps:
 * [Take baby steps: run your script code from the terminal](1.Baby_steps.md)
-    o switch from GUI mode to launching jobs in the terminal - interactive
-    o run something in batch
+    o Switch from GUI mode to launching jobs in the terminal - interactive
+    o Run something in batch
     o bjobs & options
 
-* [Know how to set up inputs and outputs](2.Input_outputs.md)
-    o abstract code to accept any input file and test change
-    o change code to make unique output file and test change
-    o introduce error  & use bhist & options to look at details and past info
+* [Set up your script's inputs and outputs](2.Input_outputs.md)
+    o Abstract code to accept any input file and test change
+    o Change code to make unique output file and test change
+    o Introduce error & use bhist & options to look at details and past info
 
 * [Better visibility with progress of jobs, job information, and job control](3.Better_visibility.md)
-    o get email notifications on job starts/ends (-B -N)
-    o making separate output and error logs (-o -e)
-    o making unique job output files with %J
+    o Get email notifications on job starts/ends (-B -N)
+    o Making separate output and error logs (-o -e)
+    o Making unique job output files with %J
 
 * [Scaling up work](4.Scaling_up.md)
     o Cluster etiquette on scaling
