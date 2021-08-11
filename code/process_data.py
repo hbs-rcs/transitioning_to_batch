@@ -3,33 +3,11 @@
 import os
 import sys
 import time
-import argparse
-
 
 def main():
     # set up globals
-    
-    #in_filepath = "data/file1.txt"
-    import argparse
-    # get inputs: either file name or data from STDIN
-    parser = argparse.ArgumentParser(description='Process and sum values in input text files.')
-    parser.add_argument('--input', '-i', required=True,
-                        help='Filename of data to parse.')
-    parser.add_argument('--output', '-o', required=True,
-                        help='Filename of output for summed data.')
-    
-    args = parser.parse_args()
-    
-    if not(args.input):
-        parser.error("Error: An input filename must be provided.")
-    else:
-        in_filepath = args.input
-    if not(args.output):
-        parser.error("Error: An output filename must be provided.")
-    else:
-        out_filepath = args.output
-    #out_filepath = "data/outfile1.txt"
-    
+    in_filepath = "data/file1.txt"
+    out_filepath = "data/outfile1.txt"
     status_count = 1000                 # when to give us status updates
     write_count = 10                    # when to write out running sum
     running_sum = 0
