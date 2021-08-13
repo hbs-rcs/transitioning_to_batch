@@ -12,7 +12,7 @@ This transition to background-only, non-GUI work may seem daunting: how does the
 Setup: You a have a folder with a number of data files (5? 20?) and a script file. Or you have a parameter sweep that will run over 100s of combinations of values. Doing this via a GUI program is cumbersome on slow. I'd like to streamline my approach for running this code repeatedly on different files.
 
 ## Code: 
-My script file process_data.py takes an input file with numbers and will output a running sum after 10 values, printing out astatus line of how many #s have been seen so far every 1000 lines summed.
+My script file [process_data.py](code/process_data.py) takes an input file with numbers and will output a running sum after 10 values, printing out status line of how many #s have been seen so far every 1000 lines summed.
 
 ## Questions for attendees
 * What do you like about using the GUI for running your script file?
@@ -36,9 +36,9 @@ My script file process_data.py takes an input file with numbers and will output 
   * Use `bhist` its options to look at job details and past job information
 
 * [Better Visibility With Progress of Jobs, Job Information, and Job Control](3.Better_visibility.md)
-  * Get email notifications on job starts/ends (-B -N)
-  * Make separate output and error logs (-o -e)
-  * Make unique job output files with %J
+  * Get email notifications on job starts/ends (`-B` `-N`)
+  * Make separate output and error logs (`-o` `-e`)
+  * Make unique job output files with `%J`
 
 * [Scaling up Work](4.Scaling_up.md)
   * Cluster Etiquette (on Scaling)
